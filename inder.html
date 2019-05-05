@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <link rel="stylesheet"
+        href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400"
+        rel="stylesheet">
+    <script defer
+        src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
+    <title>Jastrap</title>
+</head>
+
+<body>
+    <nav class="nav bg-white">
+        <p class="nav-title">
+            JasTrap
+        </p>
+        <ul class="nav-bar row">
+            <li class="nav-item bg-pink">
+                <a class="nav-link"
+                    href="#">home</a>
+            </li>
+            <li class="nav-item bg-lightgray">
+                <a class="nav-link"
+                    href="#">main</a>
+            </li>
+            <li class="nav-item bg-brown">
+                <a class="nav-link"
+                    href="#">Story</a>
+            </li>
+            <li class="nav-item bg-lightbrown">
+                <a class="nav-link"
+                    href="#">more</a>
+            </li>
+            <li class="search">
+                <input class="input"
+                    type="search"
+                    placeholder="search">
+                <i class="fas fa-search"
+                    id="fas"></i>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="bg-pink banner">
+        <div class="box">
+            It is my framework,
+            <br>
+            Check some form and buttons.
+            <div>
+                <button class="btn-simple">
+                    <span class="btn-text">more</span>
+                </button>
+                <button class="btn-simple">
+                    <span class="btn-text">less</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<div class="container">
+        <div class="box-head">button</div>
+        <div class="box1">
+                <div class="row">
+                    <div class="box-item col"> 
+                        <button class="btn">
+                            <span class="btn-text">button1</span></button></div>
+                    <div class="box-item col">
+                         <a href="#" class="btn-green">green</a>
+                    </div>
+                    <div class="box-item col">
+                        <a href="#" class="btn-lightblue">
+                            light blue</a>
+                    </div>
+                    <div class="box-item col">
+                            <a href="#" class="btn-pink btn-text bg-pink">pink</a> 
+                    </div> 
+                </div>
+                <div class="row">
+                        <div class="box-item col">
+                                <a href="#"class="btn-shadow btn-text">shadow</a> 
+                        </div> 
+                        <div class="box-item col">
+                                <a href="#" class="btn-bigger btn-text">bigger</a> 
+                        </div> 
+                        <div class="box-item col">
+                                <a href="#" class="btn-bigger btn-text">bigger</a>  
+                        </div> 
+                        <div class="box-item col">
+                                <a href="#" class="btn-pink btn-text">bigger</a> 
+                        </div> 
+                        
+                    </div>
+                
+            
+        </div>
+</div>
+    <br>
+
+
+    <!-- form -->
+    <div class="row">
+    
+            <form class="form-style"
+            action=""
+            method="post">
+            <!-- title -->
+            <fieldset class="form-heading">
+                <legend class="legend">Personal Information</legend>
+                <!-- name -->
+                <label class="label"
+                    for="field1">
+                    <span class="form-text">Name
+                        <span class="required">
+                            *
+                        </span>
+                    </span>
+                    <input type="text"
+                        class="input-field"
+                        name="field1"
+                        value="" />
+                </label>
+                <!-- email -->
+                <label class="label"
+                    for="field2">
+                    <span class="form-text">Email
+                        <span class="required">
+                            *
+                        </span>
+                    </span>
+                    <input type="text"
+                        class="input-field"
+                        name="field2"
+                        value="" />
+                </label>
+                <!-- mobile -->
+                <label class="label">
+                    <span class="form-text">GSM</span>
+                    <input type="text"
+                        class="tel-field"
+                        name="tel_no_1"
+                        value=""
+                        maxlength="4" />
+                    <span>-</span>
+                    <input type="text"
+                        class="tel-field"
+                        name="tel_no_2"
+                        value=""
+                        maxlength="4" />
+                    <span>-</span>
+                    <input type="text"
+                        class="tel-field"
+                        name="tel_no_3"
+                        value=""
+                        maxlength="10" />
+                </label>
+                <!--status  -->
+                <label class="label"
+                    for="field4">
+                    <span class="form-text">status</span>
+                    <select name="field4"
+                        class="select-field">
+                        <option value="General Question">status</option>
+                        <option value="Advertise">Married</option>
+                        <option value="Partnership">Single</option>
+                    </select>
+                </label>
+                <!-- message -->
+                <label class="label"
+                    for="field5">
+                    <span class="form-text">Message
+                        <span class="required">
+                            *
+                        </span>
+                    </span>
+                    <!-- textarea -->
+                    <textarea name="field5"
+                        class="input-field">
+    
+                    </textarea>
+                </label>
+                <!-- submit -->
+                <label class="label">
+                    <input class="submit"
+                        type="button"
+                        value="Submit" />
+                </label>
+            </fieldset>
+        </form>
+    
+        <form class="form-flat"
+            action=""
+            method="post">
+                <div class="col profile">
+                    <img class="profile-img" src="girl.svg" alt="">
+                    <p class="login" >login</p>
+                </div>
+                <div class="form-box" >
+                    <div class="form-box1" >
+                        <img class="form-img" src="profile.png" alt=""></img>
+                        <input  class="form-text" type="name" method="get" placeholder="Username">
+                    </div>
+        
+    
+                    <br>
+                    <div class="form-box1">
+                            <img class="form-img" src="password.png" alt=""></img>
+                            <input class="form-text" type="password" method="post" placeholder="......">
+                    </div>
+    
+                    <br>
+                    <div class="form-box1">
+                            <input type="checkbox">
+                            remember me
+                    </div>
+                    
+                </div>
+    
+    <button class="btn-simple" >LOGIN </button>
+                
+        </form>
+    </div>
+
+    <div class="box-head">Grid</div>
+    <div class="row row-box">
+        <div class="row-item bg-brown lg-25 col">1</div>
+        <div class="row-item lg-25 bg-pink col">12</div>
+        <div class=" row-item lg-25 bg-dark col ">34</div>
+        <div class="row-item lg-25 bg-lightbrown col">56</div>
+    </div>
+</body>
+
+</html>
