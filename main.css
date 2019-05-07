@@ -336,7 +336,7 @@ background-color: black;
 	color:#77004b;
 }
 .tel-field{
-    margin-right: auto;	
+    margin-left: 0;	
     width: 55px;
     height: 3em;
     box-sizing: border-box;
@@ -440,19 +440,19 @@ background-color: black;
 
 }
 .form-img{
-    height: 49px;
-    width: 49px;
+    height: 40px;
+    width: 40px;
     margin: 0;
     padding: 0;
     background: #a67f78;
 }
-.form-text{
+.form-flat-text{
     background:white;
     border: none;
-    width: 70%;
     height: 40px;
     background-position: left;
     padding-left: 1em;
+    width: 70%;
 }
 /* color */
 
