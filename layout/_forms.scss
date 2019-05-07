@@ -1,0 +1,148 @@
+/* form normal*/
+#form{
+    @include row;
+    @media only screen and (max-width: 576px){
+        margin-top:45em;
+        @include vCenter;
+    }
+}
+.form-style{
+    @include basic(30em,auto,5em auto,0);
+    text-align: center;
+    font: 13px $mainfont;
+    @media only screen and (max-width: 576px){
+        @include basic(70%,100%,1em,1em);
+        @include vCenter;
+    }
+}
+.form-heading{
+    color: $pink;
+    @include basic(100%,auto,0,1em);
+    text-align: left;
+	font-weight: bold;
+	font-size: 3em;
+    border: $pink solid 1px;
+}
+
+.legend{
+    color: $pink;
+    font-size: 1em;
+}
+
+.label{
+	display: block;
+    margin: 0px 0px 15px 0px;
+}
+.form-text{
+	width: 100%;
+	font-weight: bold;
+    float: left;
+    font-size: 1rem;
+    color: $pink;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.required{
+	color:#77004b;
+}
+.tel-field{
+    @include basic(55px,3em,0 0 0 3em,0);
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid $lightgray;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+    outline: none;
+}
+.select-field{
+    text-align:left;
+    width: 100%;	
+    margin-right: auto;
+    height: 3em;
+    box-sizing: border-box;
+    border: 1px solid $lightgray;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    padding: 7px;
+    outline: none;
+}
+.input-field{
+    margin-right: auto;	
+    width: 100%;
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid $lightgray;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+    outline: none;
+}
+
+.input-field:focus,
+.tel-field:focus, 
+.textarea-field:focus,  
+.select-field:focus{
+	border: 1px solid $pink;
+}
+.submit{
+    @include basic(100%,3em,0,0);
+    background: $white;
+    border: 1px solid $pink;
+    color:  $pinky;
+    font-size: 0.5em;
+}
+.submit:hover{
+    color: $white;
+    background: $lightpink;
+    box-shadow: 1px 1px 5px $pinky(255, 48, 127);
+}
+/* form flat */
+.form-flat{
+    background: $lightgray;
+    @include basic(30em,auto,2em auto,0 0 2em 0);
+    text-align: center;
+}
+.profile{
+    background-color: $skin;
+
+}
+.profile-img{
+    @include basic(5em,5em,2em 0 0 0,0);
+}
+.login{
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    color: $white;
+    margin-top: 16px;
+    font-family: $mainfont;
+}
+.form-box{
+    margin-top: 2em;
+}
+.form-box1{
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
+    justify-content: center;
+    color: $white;
+}
+.form-img{
+    @include basic(40px,40px,0,0);
+    background:$brown;
+}
+.form-flat-text{
+    background:$white;
+    @include basic(70%,40px,0,0 0 0 1em);
+    border: none;
+    background-position: left;
+}

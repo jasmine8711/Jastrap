@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <link rel="stylesheet"
+        href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script defer
+        src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
+    <title>Jassassy</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <p class="nav-title">
+            Jassassy
+        </p>
+        <ul class="nav-bar">
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="#home">home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="#button">buttons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="#form">form</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="#footer">footer</a>
+            </li>
+            <li class="search">
+                <input class="input"
+                    type="search"
+                    placeholder="search">
+                <i class="fas fa-search"
+                    id="fas"></i>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="banner"
+        id="home">
+        <div class="box">
+            It is my framework,
+            <br>
+            Check some form
+            <br>
+            and buttons.
+            <div>
+                <button class="btn-simple">
+                    <span class="btn-text">more</span>
+                </button>
+                <button class="btn-simple">
+                    <span class="btn-text">less</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"
+        id="button">
+        <div class="box-head">button</div>
+        <div class="box1">
+            <div class="row">
+                <div class="box-item">
+                    <button class="btn">
+                        <span class="btn-text">button1</span></button></div>
+                <div class="box-item">
+                    <a href="#"
+                        class="btn-green">green</a>
+                </div>
+                <div class="box-item">
+                    <a href="#"
+                        class="btn-lightblue">
+                        light blue</a>
+                </div>
+                <div class="box-item">
+                    <a href="#"
+                        class="btn-pink btn-text bg-pink">pink</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box-item col">
+                    <a href="#"
+                        class="btn-shadow btn-text">shadow</a>
+                </div>
+                <div class="box-item col">
+                    <a href="#"
+                        class="btn-bigger btn-text">bigger</a>
+                </div>
+                <div class="box-item col">
+                    <a href="#"
+                        class="btn-bigger btn-text">bigger</a>
+                </div>
+                <div class="box-item col">
+                    <a href="#"
+                        class="btn-fancy btn-text">fancy</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+
+
+    <!-- form -->
+    <div id="form">
+        <form class="form-style"
+            action=""
+            method="post">
+            <!-- title -->
+            <fieldset class="form-heading">
+                <legend class="legend">Personal Information</legend>
+                <!-- name -->
+                <label class="label"
+                    for="field1">
+                    <span class="form-text">Name
+                        <span class="required">
+                            *
+                        </span>
+                    </span>
+                    <input type="text"
+                        class="input-field"
+                        name="field1"
+                        value="" />
+                </label>
+                <!-- email -->
+                <label class="label"
+                    for="field2">
+                    <span class="form-text">Email
+                        <span class="required">
+                            *
+                        </span>
+                    </span>
+                    <input type="text"
+                        class="input-field"
+                        name="field2"
+                        value="" />
+                </label>
+                <!-- mobile -->
+                <label class="label">
+                    <span class="form-text">GSM</span>
+                    <input type="text"
+                        class="tel-field"
+                        name="tel_no_1"
+                        value=""
+                        maxlength="4" />
+                    <span>-</span>
+                    <input type="text"
+                        class="tel-field"
+                        name="tel_no_2"
+                        value=""
+                        maxlength="4" />
+                    <span>-</span>
+                    <input type="text"
+                        class="tel-field"
+                        name="tel_no_3"
+                        value=""
+                        maxlength="10" />
+                </label>
+                <!--status  -->
+                <label class="label"
+                    for="field4">
+                    <span class="form-text">status</span>
+                    <select name="field4"
+                        class="select-field">
+                        <option value="General Question">Status</option>
+                        <option value="Advertise">Married</option>
+                        <option value="Partnership">Single</option>
+                    </select>
+                </label>
+                <!-- message -->
+                <label class="label"
+                    for="field5">
+                    <span class="form-text">Message
+                        <span class="required">
+                            *
+                        </span>
+                    </span>
+                    <!-- textarea -->
+                    <textarea name="field5"
+                        class="input-field">
+
+                    </textarea>
+                </label>
+                <!-- submit -->
+                <label class="label">
+                    <input class="submit"
+                        type="button"
+                        value="Submit" />
+                </label>
+            </fieldset>
+        </form>
+
+        <form class="form-flat"
+            action=""
+            method="post">
+            <div class="col profile">
+                <img class="profile-img"
+                    src="/assets/images/girl.svg"
+                    alt="">
+                <p class="login">login</p>
+            </div>
+            <div class="form-box">
+                <div class="form-box1">
+                    <img class="form-img"
+                        src="/assets/images/profile.png"
+                        alt=""></img>
+                    <input class="form-flat-text"
+                        type="name"
+                        method="get"
+                        placeholder="Username">
+                </div>
+
+
+                <br>
+                <div class="form-box1">
+                    <img class="form-img"
+                        src="/assets/images/password.png"
+                        alt=""></img>
+                    <input class="form-flat-text"
+                        type="password"
+                        method="post"
+                        placeholder="......">
+                </div>
+
+                <br>
+                <div class="form-box1">
+                    <input type="checkbox">
+                    remember me
+                </div>
+
+            </div>
+
+            <button class="btn-simple">LOGIN </button>
+
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer class="footercontainer" id="footer">
+        <div class="footertop">
+            <div class="footerbox1">
+                <h2>Jassassy</h2>
+                <p>This is my framework，
+                    <br>
+                    and i like it.ph
+                </p>
+            </div>
+            <div class="footerbox2">
+                    <ul>
+                        <li>
+                            <h2>Address</h2>
+                                Sint-Pietersvliet 7,
+                                <br>
+                                 2000 Antwerpen
+                        </li>
+                        <li>
+                            <h2>Social</h2>
+                            Facebook
+                            <br>
+                            twitter
+                            <br>
+                            instagram
+                            <br>
+                            Linkedin
+                        </li>
+                        <li id="list4">
+                                <h2>Components</h2>
+                                Buttons
+                                <br>
+                                Forms
+                                <br>
+                                Search button
+                                
+                        </li>
+                    </ul>
+                </div>
+           
+        </div>
+
+        <div class="footerbottom"> 
+            <ul class="footerbox3">
+                <li><a href="">
+                        <img src="/assets/images/facebook.png" alt="">
+                    </a></li>
+                <li><a href="">
+                        <img src="/assets/images/whatsapp.png" alt="">
+                    </a></li>
+                <li><a href="">
+                        <img src="/assets/images/twitter.png" alt="">
+                    </a></li>
+                <li><a href="">
+                        <img src="/assets/images/instagram.png" alt="">
+                    </a></li>
+                <li><a href="">
+                        <img src="/assets/images/google-plus.png" alt="">
+                    </a></li>
+            </ul>
+            <div class="footerbox2">
+                    <ul>
+                        <li>
+                            <a href="#home">home</a>
+                        </li>
+                        <li>
+                            <a href="#button">button</a>
+                        </li>
+                        <li>
+                            <a href="#form">form</a>
+                        </li>
+                        <li id="list4">
+                            <a href="#grid">grid</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2019 Jasmine Mao</p>
+                </div>
+        </div>
+       
+    </footer>
+</body>
+
+</html>

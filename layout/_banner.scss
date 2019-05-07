@@ -1,0 +1,33 @@
+
+.banner{
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    top: 40px;
+    @include background('banner.png', no-repeat, contain, $skin,left);
+    text-align: left;
+    @media only screen and (max-width: 576px){
+        @include background('bannersm.png', no-repeat, contain, $skin,bottom);
+        position: relative;
+        top:0;
+    }
+}
+.box{
+    width: 40%;
+    text-align: left;
+    color: white;
+    padding-right:0;
+    position: relative;
+    top:40%;
+    left: 62%;
+    font-family:$mainfont;
+    text-transform: uppercase;
+    font-size: 2em;
+    @media only screen and (max-width: 576px){
+        text-align: center;
+        width: 80%;
+        position: relative;
+        top: 9%;
+        left: 10%;
+    }
+}
